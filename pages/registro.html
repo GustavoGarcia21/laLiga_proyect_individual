@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Inscripción</title>
     <link rel="stylesheet" href="../estilos/registro.css">
-    <script src="../js/formulario.js"></script>
+    <script src="../js/registro.js"></script>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
 
     <section>
         <h2>Formulario de Inscripción</h2>
-        <form id="miFormulario" action="formulario.js" method="post">
+        <form id="miFormulario" onsubmit= "return procesarFormulario()">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
 
@@ -34,7 +34,7 @@
             <input type="text" id="apellido" name="apellido" required>
 
             <label for="dni">DNI:</label>
-            <input type="text" id="dni" name="dni" required>
+            <input type="number" id="dni" name="dni" required>
 
             <label for="direccion">Dirección:</label>
             <input type="text" id="direccion" name="direccion" required>
@@ -43,10 +43,10 @@
             <input type="text" id="academia" name="academia" required>
 
             <label for="peso">Peso Aproximado:</label>
-            <input type="text" id="peso" name="peso" required>
+            <input type="number" id="peso" name="peso" required>
 
             <label for="edad">Edad:</label>
-            <input type="text" id="edad" name="edad" required>
+            <input type="number" id="edad" name="edad" required>
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
@@ -54,7 +54,7 @@
             <label for="telefono">Teléfono:</label>
             <input type="tel" id="telefono" name="telefono" required>
 
-            <button type="submit">Registrar</button>
+            <button type="submit" id="btnRegistrar">Registrar</button>
         </form>
     </section>
 

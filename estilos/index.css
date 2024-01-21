@@ -41,7 +41,7 @@ label{
 }
 
 form button {
-    margin-left: auto; /* Mueve el botón hacia la derecha utilizando la propiedad 'auto' */
+    margin-left: 5px; /* Mueve el botón hacia la derecha utilizando la propiedad 'auto' */
 }
 
 nav {
