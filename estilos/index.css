@@ -12,11 +12,36 @@ body {
 }
 
 header {
+    display: flex;
     background-color: #333;
     color: white;
     padding: 10px;
     margin: 5px;
     text-align: center;
+}
+
+.divheader-uno{
+    flex: 70%;
+}
+.centrado{
+ padding-top: 20px;
+ padding-left: 400px;
+}
+
+form {
+    display: flex;
+    flex: 30%; /* Utiliza flex para asignar el 30% del espacio */
+    align-items: center; /* Centra verticalmente los elementos del formulario */
+}
+
+label{
+    display: block;
+    margin-right: 10px;
+    margin-right: 5px;
+}
+
+form button {
+    margin-left: auto; /* Mueve el botón hacia la derecha utilizando la propiedad 'auto' */
 }
 
 nav {
